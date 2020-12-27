@@ -1,0 +1,13 @@
+com/example/formchallengeangularjava/core/crud/CrudService.class
+com/example/formchallengeangularjava/core/config/CorsConfiguration.class
+com/example/formchallengeangularjava/core/validation/Validator.class
+com/example/formchallengeangularjava/core/exception/ValidationException.class
+com/example/formchallengeangularjava/user/UserService.class
+com/example/formchallengeangularjava/core/crud/CrudController.class
+com/example/formchallengeangularjava/user/Users.class
+com/example/formchallengeangularjava/user/UserController.class
+com/example/formchallengeangularjava/user/UserRepository.class
+com/example/formchallengeangularjava/user/UserServiceImpl.class
+com/example/formchallengeangularjava/core/crud/CrudServiceImpl.class
+com/example/formchallengeangularjava/core/config/GlobalRestExceptionHandler.class
+com/example/formchallengeangularjava/FormChallengeAngularJavaApplication.class

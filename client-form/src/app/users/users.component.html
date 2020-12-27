@@ -1,0 +1,60 @@
+<form class="container" [formGroup]="formUser" *ngIf="formUser" (ngSubmit)="onSubmit()">
+  <p-toast position="top-right"></p-toast>
+
+  <div class="card">
+    <h3>Dados do Usuário</h3>
+    <div class="p-field p-grid">
+      <label for="nome" class="p-col-fixed" style="width:100px">Nome</label>
+      <div class="p-col">
+        <input
+          id="nome" formControlName="nome" type="text"
+          class="p-inputtext-md"
+          pInputText
+          [ngClass]="formUser.get('nome').errors?.required && formUser.get('nome').touched ? 'p-invalid' : ''"/>
+
+        <small *ngIf="formUser.get('nome').errors?.required && formUser.get('nome').touched"
+               class="p-invalid">
+          O nome é obrigatório!
+        </small>
+      </div>
+    </div>
+
+    <div class="p-field p-grid">
+      <label for="sobrenome" class="p-col-fixed" style="width:100px">Sobrenome</label>
+      <div class="p-col">
+        <input
+          id="sobrenome"
+          formControlName="sobrenome"
+          type="text"
+          pInputText
+          class="p-inputtext-md"
+          [ngClass]="formUser.get('sobrenome').errors?.required && formUser.get('sobrenome').touched ? 'p-invalid' : ''">
+
+        <small *ngIf="formUser.get('sobrenome').errors?.required && formUser.get('sobrenome').touched"
+               class="p-invalid">
+          O sobrenome é obrigatório!
+        </small>
+      </div>
+    </div>
+    <div class="p-field p-grid">
+      <label for="email" class="p-col-fixed" style="width:100px">Email</label>
+      <div class="p-col">
+        <input
+          id="email"
+          formControlName="email"
+          type="email"
+          pInputText
+          class="p-inputtext-md"
+          [ngClass]="formUser.get('email').errors?.required && formUser.get('email').touched ? 'p-invalid' : ''">
+        <small *ngIf="formUser.get('email').errors?.required && formUser.get('email').touched"
+               class="p-invalid">
+          O email é obrigatório!
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <p-button type="submit" [disabled]="formUser.invalid" label="Cadastrar" icon="pi pi-check"
+            styleClass="p-button-lg"></p-button>
+
+</form>
