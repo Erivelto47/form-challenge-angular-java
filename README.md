@@ -10,3 +10,7 @@ Para rodar a aplciação necessita-se previamente instalado o Docker e Docker-Co
 Após instalados basta baixaro o arquivo [compose.yml](https://github.com/Erivelto47/form-challenge-angular-java/blob/master/docker-compose.yml) ir ao terminal e rodar o seguinte comando:
 
 `docker-compose up`
+
+Com a aplicação rodando acesse:
+
+`http://localhost:4200`
